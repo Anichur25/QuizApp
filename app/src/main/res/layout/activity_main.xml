@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Inside which HTML element do we put the JavaScript?"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="italic">
+
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/RG1_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/RG1_OPA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="javascript"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+        <RadioButton
+            android:id="@+id/RG1_OPB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="scripting"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+        <RadioButton
+            android:id="@+id/RG1_OPC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="script"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+        <RadioButton
+            android:id="@+id/RG1_OPD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="js"
+            android:textAppearance="?android:textAppearanceLarge" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. How do you write 'Hello World' in an alert box?"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="italic">
+
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/RG_TWO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/RG2_OPA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" alertBox('Hello World');"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+
+        <RadioButton
+            android:id="@+id/RG2_OPB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="msgBox('Hello World');"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+        <RadioButton
+            android:id="@+id/RG2_OPC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="alert('Hello World');"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+        <RadioButton
+            android:id="@+id/RG2_OPD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="msg('Hello World');"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check answer"/>
+
+</LinearLayout>
